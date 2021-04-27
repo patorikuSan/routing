@@ -58,7 +58,15 @@ class Main extends CI_Controller {
         echo ucwords($sayit);
     }
 
-    
+    public function world(){
+        $this->load->view('places');
+    }
+
+    public function ninjas($num){
+       $data['num'] = $num;
+       $this->load->view('ninja_x',$data);
+       print_r($data);
+    }
 
 
 }
